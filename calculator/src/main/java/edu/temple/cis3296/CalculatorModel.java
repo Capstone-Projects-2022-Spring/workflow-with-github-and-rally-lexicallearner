@@ -110,7 +110,7 @@ public class CalculatorModel {
 
     public double operationClear() { return 0.0; }
 
-    public double operationAdd(double rhs, double lhs) {
+    public double operationAdd(double lhs, double rhs) {
         return lhs + rhs;
     }
 
