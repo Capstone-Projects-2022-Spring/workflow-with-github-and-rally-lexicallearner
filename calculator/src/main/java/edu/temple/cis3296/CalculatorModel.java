@@ -122,7 +122,7 @@ public class CalculatorModel {
         return rhs;
     }
 
-    public double operationDiv(double lhs, double rhs) {
+    public double operationDiv(double rhs, double lhs) {
         return (rhs/lhs);
     }
 
