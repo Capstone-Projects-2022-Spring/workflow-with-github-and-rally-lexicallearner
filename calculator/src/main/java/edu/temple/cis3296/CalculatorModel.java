@@ -110,12 +110,12 @@ public class CalculatorModel {
 
     public double operationClear() { return 0.0; }
 
-    public double operationAdd(double rhs, double lhs) {
-        return lhs + lhs;
+    public double operationAdd(double lhs, double rhs) {
+        return lhs + rhs;
     }
 
     public double operationSubst(double rhs, double lhs) {
-        return (lhs - rhs);
+        return (rhs - lhs);
     }
 
     public double operationMult(double rhs, double lhs) {
@@ -123,12 +123,12 @@ public class CalculatorModel {
     }
 
     public double operationDiv(double rhs, double lhs) {
-        return rhs;
+        return (rhs/lhs);
     }
 
-    public double operationPercent(double value) { return 0.1; }
+    public double operationPercent(double value) { return value/100; }
 
-    public double operationInverse(double value) { return 1/value; }
+    public double operationInverse(double value) { return -value; }
 
 
 }
